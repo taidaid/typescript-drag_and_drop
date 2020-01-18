@@ -126,7 +126,7 @@ class ProjectInput {
   }
 
   @autobind
-  private submitHandler(event: Event @Log) {
+  private submitHandler(event: Event) {
     event.preventDefault();
     const userInput = this.gatherUserInput();
     if (Array.isArray(userInput)) {
